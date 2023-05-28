@@ -96,7 +96,7 @@ nav ul li:hover {
     gap: 12px;
 }
 
-.start_container button:first-child {
+.btn_group button:first-child {
     padding: 12px 48px;
     color: #FFFFFF;
     background-color: #8053FF;
@@ -108,14 +108,14 @@ nav ul li:hover {
     border: 1px solid transparent;
 }
 
-.start_container button:first-child:hover {
+.btn_group button:first-child:hover {
     color: #8053FF;
     background-color: transparent;
     border: 1px solid #8053FF;
     transform: translateY(-5px);
 }
 
-.start_container button:last-child {
+.btn_group button:last-child {
     padding: 12px 26px;
     color: #8053FF;
     background-color: #FFFFFF;
@@ -127,7 +127,7 @@ nav ul li:hover {
     transition: all 0.5s ease-out;
 }
 
-.start_container button:last-child:hover {
+.btn_group button:last-child:hover {
     color: #FFFFFF;
     background-color: #8053FF;
     border: 1px solid #8053FF;
@@ -170,3 +170,95 @@ nav ul li:hover {
     transform: scale(1.1);
 }
 
+
+/*Section Defi*/
+.section_defi {
+    padding-bottom: 200px;
+}
+
+.defi_left_side {
+    display: flex;
+    justify-content: center;
+}
+
+.defi_left_side > div {
+    text-align: left;
+    max-width: 400px;
+}
+
+.defi_left_side h1 {
+    font-size: 52px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #23155B;
+}
+
+.defi_left_side span {
+    color: #8053FF;
+}
+
+
+.defi_item {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 14px 64px -4px #23155B0D;
+    background-color: #FFFFFF;
+    margin: 12px 0;
+    gap: 12px;
+    padding: 32px 50px;
+}
+
+.defi_item_number {
+    color: #8053FF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.defi_item_text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #23155B;
+}
+
+
+/*Section Answer*/
+.section_answer {
+    padding: 200px 0;
+    background-color: #FBFAFF;
+    background-image: url("../images/background/answer_background.png");
+    border-top-left-radius: 15%;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.answer_wrapper {
+    max-width: 630px;
+}
+
+.section_answer a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(128, 83, 255, 1);
+}
+
+.section_answer h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    color: rgba(35, 21, 91, 1);
+    margin-bottom: 12px;
+}
+
+.section_answer h1 span {
+    color: rgba(128, 83, 255, 1);
+}
+
+.section_answer p {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(35, 21, 91, 1);
+}

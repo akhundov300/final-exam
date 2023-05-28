@@ -1,9 +1,19 @@
-$(document).ready(function () {
-    $('.mobile-nav-button').on('click', function() {
-        $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
-        $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");
-        $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");
-        $('.mobile-menu').toggleClass('mobile-menu--open');
-        return false;
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion => {
+
+    const bttn = accordion.querySelector('.accordion__button');
+    const panel = accordion.querySelector('.accordion__panel');
+
+    bttn.addEventListener('click', () => {
+
+        const active__bttn = document.querySelectorAll('.accordion .accordion__bttn--active');
+        active__bttn.forEach(c => c !== bttn? c.classList.remove('accordion__bttn--active') : null);
+        bttn.classList.toggle('accordion__bttn--active');
+
+        const active__panel = document.querySelectorAll('.accordion .accordion__panel--active');
+        active__panel.forEach(n => n !== panel ? n.classList.remove('accordion__panel--active') : null);
+        panel.classList.toggle('accordion__panel--active');
+
     });
 });
