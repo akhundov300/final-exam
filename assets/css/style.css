@@ -18,6 +18,12 @@ body {
     height: 116px;
 }
 
+.header_wrapper img {
+    position: absolute;
+    cursor: pointer;
+    animation: logoAnimation 5s linear infinite;
+}
+
 .desktop_menu > ul {
     display: flex;
     justify-content: center;
@@ -79,6 +85,7 @@ nav ul li:hover {
 }
 
 .start_container h1 {
+    user-select: none;
     font-size: 64px;
     line-height: 96px;
 }
@@ -94,7 +101,7 @@ nav ul li:hover {
     gap: 12px;
 }
 
-.btn_group button:first-child {
+.btn_group a:first-child {
     padding: 12px 48px;
     color: #FFFFFF;
     background-color: #8053FF;
@@ -106,14 +113,14 @@ nav ul li:hover {
     border: 1px solid transparent;
 }
 
-.btn_group button:first-child:hover {
+.btn_group a:first-child:hover {
     color: #8053FF;
     background-color: transparent;
     border: 1px solid #8053FF;
     transform: translateY(-5px);
 }
 
-.btn_group button:last-child {
+.btn_group a:last-child {
     padding: 12px 26px;
     color: #8053FF;
     background-color: #FFFFFF;
@@ -125,7 +132,7 @@ nav ul li:hover {
     transition: all 0.5s ease-out;
 }
 
-.btn_group button:last-child:hover {
+.btn_group a:last-child:hover {
     color: #FFFFFF;
     background-color: #8053FF;
     border: 1px solid #8053FF;
@@ -135,6 +142,10 @@ nav ul li:hover {
 /*Section Pipeline*/
 .section_pipeline {
     padding: 200px 0;
+}
+
+.section_pipeline img:hover {
+    cursor: pointer;
 }
 
 .section_pipeline h1 {
@@ -190,7 +201,15 @@ nav ul li:hover {
     margin: 12px 0;
     gap: 12px;
     padding: 32px 50px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 1s ease-out;
 }
+
+.defi_item:hover {
+    transform: translateY(-10px);
+}
+
 
 .defi_item_number {
     color: #8053FF;
@@ -250,7 +269,7 @@ nav ul li:hover {
     padding: 200px 0;
     background-color: #FBFAFF;
     background-image: url("../images/background/accsess_background.png");
-    border-top-right-radius: 15%;
+    border-top-right-radius: 170px;
     background-position: top right;
     background-repeat: no-repeat;
 }
@@ -275,14 +294,13 @@ nav ul li:hover {
 }
 
 .accsess {
-    padding: 12px 24px;
+    padding: 15px 24px;
     background-color: rgba(128, 83, 255, 1);
     color: #FFFFFF;
     font-weight: 500;
     font-size: 18px;
     line-height: 36px;
     border-radius: 8px;
-    margin-top: 40px;
     width: 280px;
     border: 1px solid transparent;
     transition: all 0.5s ease-out;
@@ -401,6 +419,7 @@ nav ul li:hover {
 }
 
 .input_wrapper label {
+    width: 100%;
     color: rgba(212, 205, 239, 1);
     margin-bottom: 4px;
     margin-top: 20px;
@@ -425,6 +444,15 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     padding: 12px 95px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-out;
+}
+
+.send_btn:hover {
+    background-color: transparent;
+    color: rgba(128, 83, 255, 1);
+    border: 1px solid rgba(128, 83, 255, 1);
+    color: #FFFFFF;
 }
 
 .footer_right_side {
@@ -448,6 +476,13 @@ nav ul li:hover {
     color: rgba(212, 205, 239, 1);
     font-weight: 500;
     line-height: 21;
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+}
+
+.copyright_text:hover {
+    color: rgba(212, 205, 239, 1);
+    opacity: 1;
 }
 
 

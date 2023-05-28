@@ -10,7 +10,7 @@
     <!--    Our app.css-->
     <link rel="stylesheet" href="assets/app.css">
     <!--    Add favicon-->
-    <link rel="icon" type="image/png" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/icons/main/one_logo.png">
     <!--    Title-->
     <title>Vision Capital</title>
 </head>
@@ -22,32 +22,31 @@
         <div class="row">
             <div class="header_wrapper">
                 <div>
-                    <img src="assets/images/main_logo.png" alt="main_logo">
+                    <img src="assets/images/main/main_logo.png" alt="main_logo">
                 </div>
 
                 <nav class="desktop_menu">
                     <ul>
-                        <li><a href="#">For Projects</a></li>
-                        <li><a href="#">For Investors</a></li>
-                        <li class="btn_join"><a href="#">Join Now</a></li>
+                        <li><a href="#project">For Projects</a></li>
+                        <li><a href="#investors">For Investors</a></li>
+                        <li class="btn_join"><a href="#join">Join Now</a></li>
                     </ul>
                 </nav>
 
-                <div class="mobile_menu">
-                    <div class="mobile-nav-button">
-                        <div class="mobile-nav-button__line"></div>
-                        <div class="mobile-nav-button__line"></div>
-                        <div class="mobile-nav-button__line"></div>
-                    </div>
-
-                    <nav class="mobile-menu">
-                        <ul>
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
+                <div class="mobile_menu header">
+                    <nav class="global-nav">
+                        <ul class="global-nav__list">
+                            <li class="global-nav__item"><a href="#project">For Projects</a></li>
+                            <li class="global-nav__item"><a href="#investors">For Investors</a></li>
+                            <li class="global-nav__item"><a href="#join">Join Now</a></li>
                         </ul>
                     </nav>
+                    <div class="hamburger" id="js-hamburger">
+                        <span class="hamburger__line hamburger__line--1"></span>
+                        <span class="hamburger__line hamburger__line--2"></span>
+                        <span class="hamburger__line hamburger__line--3"></span>
+                    </div>
+                    <div class="black-bg" id="js-black-bg"></div>
                 </div>
             </div>
         </div>
@@ -66,8 +65,8 @@
                     <h1>Vision Capital</h1>
                     <h3>The right way to fund and incubate your DeFi startup</h3>
                     <div class="btn_group">
-                        <button>I Need Funding</button>
-                        <button>Become an Investor</button>
+                        <a href="#need">I Need Funding</a>
+                        <a href="#investors">Become an Investor</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +107,7 @@
 </section>
 
 <!--    Section Defi-->
-<section class="section_defi">
+<section class="section_defi" id="need">
     <div class="container">
         <div class="row">
 
@@ -161,7 +160,7 @@
 </section>
 
 <!--    Section Answer-->
-<section class="section_answer">
+<section class="section_answer" id="project">
     <div class="container">
         <div class="row">
             <div class="answer_wrapper">
@@ -176,7 +175,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
                         <button class="accordion__button">
-                            <img src="assets/icons/green_ok.png" alt="okay">
+                            <img src="assets/icons/main/green_ok.png" alt="okay">
                             Decentralized investments
                         </button>
                         <div class="accordion__panel">
@@ -186,7 +185,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> Access to
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> Access to
                             professional investors
                         </button>
                         <div class="accordion__panel">
@@ -199,7 +198,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> Exchange
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> Exchange
                             relations
                         </button>
                         <div class="accordion__panel">
@@ -208,7 +207,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> Staking
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> Staking
                         </button>
                         <div class="accordion__panel">
                             <p class="accordion-panel__content">Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -220,7 +219,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay">
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay">
                             Product-market fit analysis
                         </button>
                         <div class="accordion__panel">
@@ -230,7 +229,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> Detailed
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> Detailed
                             tokenomics
                         </button>
                         <div class="accordion__panel">
@@ -240,7 +239,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay">Smart contract
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay">Smart contract
                             audit
                         </button>
                         <div class="accordion__panel">
@@ -253,7 +252,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay">
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay">
                             Community-building and social media marketing
                         </button>
                         <div class="accordion__panel">
@@ -266,7 +265,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> White Paper,
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> White Paper,
                             blog, and media content from the best authors
                         </button>
                         <div class="accordion__panel">
@@ -275,8 +274,8 @@
                         </div>
                     </div>
                     <div class="btn_group">
-                        <button>I Need Funding</button>
-                        <button>Learn More</button>
+                        <a href="#investors">I Need Funding</a>
+                        <a href="#more">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -286,7 +285,7 @@
 
 
 <!--    Section Access-->
-<section class="section_accsess">
+<section class="section_accsess" id="more">
     <div class="container">
         <div class="row">
             <div class="accsess_wrapper">
@@ -298,7 +297,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
                         <button class="accordion__button">
-                            <img src="assets/icons/green_ok.png" alt="okay">
+                            <img src="assets/icons/main/green_ok.png" alt="okay">
                             Low entry prices on DeFi tokens
                         </button>
                         <div class="accordion__panel">
@@ -308,7 +307,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> Fully
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> Fully
                             decentralized
                         </button>
                         <div class="accordion__panel">
@@ -321,7 +320,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> Exchange
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> Exchange
                             relations
                         </button>
                         <div class="accordion__panel">
@@ -330,7 +329,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay">Only vetted
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay">Only vetted
                             projects that passed our due diligence
                         </button>
                         <div class="accordion__panel">
@@ -343,7 +342,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay">
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay">
                             New projects every month
                         </button>
                         <div class="accordion__panel">
@@ -353,7 +352,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  accordion">
-                        <button class="accordion__button"><img src="assets/icons/green_ok.png" alt="okay"> High chance
+                        <button class="accordion__button"><img src="assets/icons/main/green_ok.png" alt="okay"> High chance
                             of success thanks to our incubation program
                         </button>
                         <div class="accordion__panel">
@@ -365,23 +364,23 @@
                 </div>
             </div>
         </div>
-        <button class="accsess">Become an Investor</button>
+        <a class="accsess" href="#investors">Become an Investor</a>
     </div>
 </section>
 
 
 <!--    Section Brought-->
-<section class="section_brought">
+<section class="section_brought" id="investors">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 brought_left_side">
-                <img src="assets/images/man.png" alt="man">
-                <img src="assets/images/brought_background.png" class="brought_background" alt="brought">
+                <img src="assets/images/main/man.png" alt="man">
+                <img src="assets/images/background/brought_background.png" class="brought_background" alt="brought">
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 brought_right_side">
                 <div>
-                    <img src="assets/icons/one_logo.png" alt="logo">
+                    <img src="assets/icons/main/one_logo.png" alt="logo">
                     <h1><span>Brought to you</span> by DeFiPie</h1>
                     <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity
                         mining,
@@ -447,7 +446,7 @@
 </section>
 
 <!--    Section Footer-->
-<footer class="section_footer">
+<footer class="section_footer" id="join">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 footer_left_side">
@@ -459,28 +458,28 @@
                 <form>
                     <div class="container">
                         <div class="row">
-                            <div class="input_wrapper col-6">
+                            <div class="input_wrapper col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <label>
                                     How is your project called?
                                     <input type="text">
                                 </label>
                             </div>
 
-                            <div class="input_wrapper col-6">
+                            <div class="input_wrapper col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <label>
                                     Your Email
                                     <input type="text">
                                 </label>
                             </div>
 
-                            <div class="input_wrapper col-6">
+                            <div class="input_wrapper col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <label>
                                     About the project
                                     <input type="text">
                                 </label>
                             </div>
 
-                            <div class="input_wrapper col-6">
+                            <div class="input_wrapper col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <label>
                                     Telegram name
                                     <input type="text">

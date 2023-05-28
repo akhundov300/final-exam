@@ -2,22 +2,118 @@
 }
 
 @media screen and (max-width: 992px) {
+    .copyright_group {
+        display: none;
+    }
+
+    .footer_right_side {
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .send_btn {
+        width: 97%;
+    }
+
+    .footer_right_side ul {
+        padding: unset;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
+    .section_pipeline, .section_defi, .section_answer, .section_accsess, .section_footer {
+        padding: 120px 0;
+    }
+
     .desktop_menu {
         display: none;
     }
 
     .mobile_menu {
         display: block;
+        /*display: none;*/
+    }
+
+    .start_container {
+        text-align: center;
+    }
+
+    .btn_group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn_group a:first-child {
+        margin-bottom: 20px;
+    }
+
+    .section_pipeline img {
+        margin: 5px 0;
+    }
+
+    .defi_left_side h1 {
+        text-align: center;
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+    .defi_item_text {
+        text-align: center;
+    }
+
+    .section_answer {
+        text-align: center;
+    }
+
+    .section_answer {
+        border-radius: unset;
+    }
+
+    .section_accsess {
+        text-align: center;
+        border-radius: unset;
+    }
+
+    .accsess_wrapper h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .accsess {
+        display: block;
+        width: 100% !important;
+    }
+
+    .brought_left_side {
+        display: none;
+    }
+
+    .brought_right_side {
+        position: relative;
+        text-align: center;
+    }
+
+    .brought_right_side img {
+        position: absolute;
+        top: 25px;
+        animation: mobileLogoAnimation 15s linear infinite;
+    }
+
+    .brought_right_side {
+        padding-top: 150px;
     }
 }
 
 @media screen and (max-width: 576px) {
-}
+    .footer_left_side h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
 
-@media screen and (max-width: 420px) {
+    .input_wrapper label {
+        /*width: 100%*/
+    }
 
 }

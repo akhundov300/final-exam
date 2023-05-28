@@ -58,3 +58,31 @@
         color: #8053FF;
     }
 }
+
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes mobileLogoAnimation {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
+}

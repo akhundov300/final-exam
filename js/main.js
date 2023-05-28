@@ -1,4 +1,4 @@
-// Custom Scroll
+/*-- Custom ---*/
 document.querySelector('.custom-scroll').style.scrollBehavior = 'smooth';
 
 

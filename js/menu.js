@@ -1,19 +1,14 @@
-const accordions = document.querySelectorAll('.accordion');
+/*-- Menu ---*/
+function toggleNav() {
+    var body = document.body;
+    var hamburger = document.getElementById('js-hamburger');
+    var blackBg = document.getElementById('js-black-bg');
 
-accordions.forEach(accordion => {
-
-    const bttn = accordion.querySelector('.accordion__button');
-    const panel = accordion.querySelector('.accordion__panel');
-
-    bttn.addEventListener('click', () => {
-
-        const active__bttn = document.querySelectorAll('.accordion .accordion__bttn--active');
-        active__bttn.forEach(c => c !== bttn? c.classList.remove('accordion__bttn--active') : null);
-        bttn.classList.toggle('accordion__bttn--active');
-
-        const active__panel = document.querySelectorAll('.accordion .accordion__panel--active');
-        active__panel.forEach(n => n !== panel ? n.classList.remove('accordion__panel--active') : null);
-        panel.classList.toggle('accordion__panel--active');
-
+    hamburger.addEventListener('click', function() {
+        body.classList.toggle('nav-open');
     });
-});
+    blackBg.addEventListener('click', function() {
+        body.classList.remove('nav-open');
+    });
+}
+toggleNav();

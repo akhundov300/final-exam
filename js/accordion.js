@@ -1,3 +1,4 @@
+/*-- Accordion ---*/
 var accordion = document.getElementById('accordion');
 accordion.addEventListener('click', change);
 function change(event) {
