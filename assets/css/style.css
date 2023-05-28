@@ -308,7 +308,7 @@ nav ul li:hover {
 
 /*Section Brought*/
 .section_brought {
-    padding-bottom: 200px;
+    /*padding-bottom: 200px;*/
 }
 
 .brought_left_side {
@@ -364,4 +364,113 @@ nav ul li:hover {
     font-size: 18px;
     line-height: 28px;
     color: rgba(35, 21, 91, 1);
+}
+
+
+/*Section Footer*/
+.section_footer {
+    padding: 180px 0;
+    position: relative;
+    border-top-left-radius: 25%;
+    background-color: rgba(35, 21, 91, 1);
+    background-image: url("../images/background/footer_left.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.footer_left_side h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer_left_side > div:first-child {
+    max-width: 460px;
+}
+
+.footer_left_side h1 span {
+    color: rgba(128, 83, 255, 1);
+}
+
+.footer_left_side p {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(212, 205, 239, 1);
+    margin: 12px 0 50px 0;
+}
+
+.input_wrapper {
+    padding-left: 0;
+}
+
+.input_wrapper label {
+    color: rgba(212, 205, 239, 1);
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+
+.section_footer input {
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    height: 48px;
+    color: rgba(128, 83, 255, 1);
+    width: 100%;
+}
+
+.send_btn {
+    background-color: rgba(128, 83, 255, 1);
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 95px;
+}
+
+.footer_right_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer_right_side ul {
+    display: flex;
+    gap: 30px;
+}
+
+.copyright_group {
+    display: flex;
+    gap: 40px;
+}
+
+.copyright_text {
+    color: rgba(212, 205, 239, 1);
+    font-weight: 500;
+    line-height: 21;
+}
+
+
+
+/* Custom Scroll */
+.custom-scroll {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888888 #F4F4F4;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 83, 255, 1);
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
 }
