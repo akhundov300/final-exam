@@ -22,7 +22,7 @@
     margin-right: 12px;
 }
 .accordion__bttn--active {
-    background-color: rgba(128, 83, 255, 0.22);
+    background-color: #00800061;
     color: #FFFFFF;
 }
 

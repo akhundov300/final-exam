@@ -262,3 +262,46 @@ nav ul li:hover {
     line-height: 28px;
     color: rgba(35, 21, 91, 1);
 }
+
+
+
+/*Section Access*/
+.section_accsess {
+    padding: 200px 0;
+    background-color: #FBFAFF;
+    background-image: url("../images/background/accsess_background.png");
+    border-top-right-radius: 15%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.accsess_wrapper a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(128, 83, 255, 1);
+}
+
+.accsess_wrapper h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    color: rgba(35, 21, 91, 1);
+    margin-bottom: 12px;
+}
+
+.accsess_wrapper h1 span {
+    color: rgba(128, 83, 255, 1);
+}
+
+.accsess {
+    padding: 12px 24px;
+    background-color: rgba(128, 83, 255, 1);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    border-radius: 8px;
+    margin-top: 40px;
+    width: 280px;
+}
