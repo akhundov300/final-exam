@@ -264,7 +264,6 @@ nav ul li:hover {
 }
 
 
-
 /*Section Access*/
 .section_accsess {
     padding: 200px 0;
@@ -304,4 +303,65 @@ nav ul li:hover {
     border-radius: 8px;
     margin-top: 40px;
     width: 280px;
+}
+
+
+/*Section Brought*/
+.section_brought {
+    padding-bottom: 200px;
+}
+
+.brought_left_side {
+    position: relative;
+    padding: 0;
+    height: 600px;
+}
+
+.brought_left_side img:first-child {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 530px;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 2;
+}
+
+.brought_left_side img:last-child {
+    position: absolute;
+    left: 95px;
+    top: 70px;
+    height: 530px;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+
+.brought_right_side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    z-index: 5;
+}
+
+.brought_right_side > div:first-child {
+    max-width: 650px;
+}
+
+.brought_right_side h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    margin: 16px 0 22px 0;
+}
+
+.brought_right_side span {
+    color: #8053FF;
+}
+
+.brought_right_side p {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(35, 21, 91, 1);
 }
