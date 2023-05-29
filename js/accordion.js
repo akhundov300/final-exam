@@ -1,27 +1,20 @@
 /*-- Accordion ---*/
-var accordion = document.getElementById('accordion');
-accordion.addEventListener('click', change);
-function change(event) {
-    var targ = event.target;
-    if (targ.tagName !== 'H3') return;
-    if (targ.classList.contains('select')) {
-        hideAll();
-    } else {
-        hideAll();
-        targ.classList.add('select');
-        showText(targ.nextElementSibling);
-    }
-}
-function hideAll() {
-    var h3El = accordion.querySelectorAll('h3');
-    var divEl = accordion.querySelectorAll('div');
-    for (var i = 0; i < h3El.length; i++) {
-        h3El[i].classList.remove('select');
-    }
-    for (var i = 0; i < divEl.length; i++) {
-        divEl[i].style.height = '0';
-    }
-}
-function showText(textEl) {
-    textEl.style.height = textEl.scrollHeight + 'px';
-}
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion => {
+
+    const bttn = accordion.querySelector('.accordion__button');
+    const panel = accordion.querySelector('.accordion__panel');
+
+    bttn.addEventListener('click', () => {
+
+        const active__bttn = document.querySelectorAll('.accordion .accordion__bttn--active');
+        active__bttn.forEach(c => c !== bttn? c.classList.remove('accordion__bttn--active') : null);
+        bttn.classList.toggle('accordion__bttn--active');
+
+        const active__panel = document.querySelectorAll('.accordion .accordion__panel--active');
+        active__panel.forEach(n => n !== panel ? n.classList.remove('accordion__panel--active') : null);
+        panel.classList.toggle('accordion__panel--active');
+
+    });
+});
